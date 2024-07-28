@@ -1,0 +1,15 @@
+# Copyright (c) 2024 Michael E. Rowan
+#
+# This file is part of Wordle-GPU.
+#
+# License: MIT
+
+# temp files
+*~
+
+# object files, executables
+*.o
+*.exe
+
+# build directory
+build/
