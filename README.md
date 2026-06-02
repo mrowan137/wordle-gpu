@@ -9,7 +9,7 @@ Demo (left: solver, right: a Wordle GUI): ![Wordle-GPU demo](./imgs/demo.gif)
 ## Requirements
 
 - [CMake](https://gitlab.kitware.com/cmake/cmake) >= 3.21
-- [ROCm](https://github.com/ROCm/ROCm) >= 5.0
+- [ROCm](https://github.com/ROCm/ROCm) >= 5.0 (see [ROCm compatibility matrix](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html) for full support details)
 - AMD GPU to run the program (current repo is configured for Radeon Pro VII / gfx906)
 
 ## Building the code

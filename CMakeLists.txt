@@ -39,9 +39,9 @@ add_custom_target(generate_constants ALL
 )
 
 # Get the wavefront dependent on architecture
-if(CMAKE_HIP_ARCHITECTURES MATCHES "^gfx9")
+if(CMAKE_HIP_ARCHITECTURES MATCHES "^gfx[89]")
   add_compile_definitions(DETECTED_WAVEFRONT_SIZE=64)
-elseif(CMAKE_HIP_ARCHITECTURES MATCHES "^gfx1[01]")
+elseif(CMAKE_HIP_ARCHITECTURES MATCHES "^gfx1[0-2]")
   add_compile_definitions(DETECTED_WAVEFRONT_SIZE=32)
 else()
   message(FATAL_ERROR "Unsupported architecture ${CMAKE_HIP_ARCHITECTURES}")
